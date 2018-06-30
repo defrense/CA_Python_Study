@@ -42,8 +42,14 @@ def calculate_best_mb(possible_ms, possible_bs, datapoints):
 
 result = calculate_best_mb(possible_ms, possible_bs, datapoints)
 
-print (result)
+
 
 m, b = result
+
+m = '{.2f}'.format(m)
+b = '{.2f}'.format(b)
+
+print (m)
+print (b)
 
 print (get_y(0.3, 1.7, 6))
